@@ -9,7 +9,7 @@ pose = mpPose.Pose()
 def main():
     st.title("Exercise Recognition with Streamlit")
 
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)
 
     up = False
     counter = 0
