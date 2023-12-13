@@ -22,7 +22,7 @@ importlib-metadata==6.8.0
 imutils==0.5.4
 packaging==23.2
 pandas==2.1.2
-Pillow==10.1.0
+Pillow==9.5.0
 protobuf==4.24.4
 pyarrow==13.0.0
 pydeck==0.8.1b0
