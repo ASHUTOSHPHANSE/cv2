@@ -144,7 +144,8 @@ def main():
         
         cv2.imshow("img",img)
         cv2.waitKey(1)
-                
+        if key == 27 :
+            break                
         st.image(img, channels="BGR", use_column_width=True)
 
 if __name__ == "__main__":
