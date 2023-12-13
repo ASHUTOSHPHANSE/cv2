@@ -9,7 +9,12 @@ pose = mpPose.Pose()
 def main():
     st.title("Exercise Recognition with Streamlit")
 
-    cap = cv2.VideoCapture(1)
+    for i in range(10):  # Check indices from 0 to 9
+        cap = cv2.VideoCapture(i)
+        if not cap.isOpened():
+            break
+        cap.release()
+
 
     up = False
     counter = 0
