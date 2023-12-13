@@ -32,6 +32,10 @@ def main():
 
     while True:
         success, img = cap.read()
+
+        if not success or img is None:
+            continue
+            
         img = cv2.resize(img, (1280, 720))
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         results = pose.process(imgRGB)
